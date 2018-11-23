@@ -75,23 +75,24 @@
   background: blue
 
 .mainPart
-  clearFix()
+  width 100%
+  height 300px
+  display flex
   .mainPart-left
+    flex: 2
     width: 230px
     height: 230px
     background: #7e8c8d
     margin: 20px
-    float: left
   .mainPart-right
+    flex 8
     margin: 20px
-    float: right
-    width: 75%
     height: 210px
     text-indent 20px
     letter-spacing 5px
-    >p
-      width: 100%
-      height:100%
+    overflow: hidden
+
+
    /*省略号
 //height: 50px
 //overflow: hidden;
@@ -110,16 +111,103 @@ overflow: hidden;*/
       flex: 1
       background: #000
       margin 0px 20px
-.swiper
-  width: 200px
-  height 200px
-  float left
-  overflow hidden
-  .swiper-container
-    width: 200px;
-    height: 200px;
-    .swiper-slide
-      >img
-        width: 100%
+
+.gongsiNews
+  width: 100%
+  height:200px
+  margin: 10px
+  position: relative
+  .swiper
+    width 200px
+    position: absolute
+    left: 0
+    top:0
+    .swiper-container
+      height: 200px;
+      //.swiper-slide
+        //>img
+        //  width: 100%
+  .news-content
+    position: absolute
+    right: 0
+    top: 0
+    height: 200px
+    .news
+      height: 200px
+      background: deeppink
+.service
+  width: 100%
+  height: 100%
+  clearFix()
+  >img
+    margin: 10px
+    width: 160px
+    float: left
+  .header-right
+    float: right
+
+
+.footer
+  width: 100%
+  height: 100%
+  background: wheat
+  clearFix()
+  .footer-more
+    width: 400px
+    height: 200px
+    background: pink
+    margin-left 100px
+    margin-bottom 30px
+    margin-top 50px
+    float left
+    clearFix()
+    .footer-ul
+      width: 400px
+      height: 200px
+      display: block
+      >li
+        float: left
+        width: 170px
+        height: 13px
+        margin 10px
+        background: #000
+
+
+  .connect
+    width: 400px
+    height: 200px
+    background: wheat
+    float: left;
+    margin-left 20px
+    margin-bottom 30px
+    margin-top 50px
+    >img
+      width: 120px
+      margin: 5px
+
+
+  .QRCode
+    width: 400px
+    height: 200px
+    background: white
+    float left
+    margin-left 20px
+    margin-bottom 30px
+    margin-top 50px
+    >img
+      width: 120px
+      margin: 35px
+
+.terms
+  display: flex
+  width: 100%
+  height: 60px
+  background: wheat
+  text-align: center
+  >div
+    flex: 1
+    justify-content center
+    align-items center
+
 
 
